@@ -4,11 +4,10 @@ import { NavLink } from '../types';
 
 const navLinks: NavLink[] = [
   { label: 'SUMMARY', href: '#summary' },
-  { label: 'THE GAP', href: '#gap' },
-  { label: 'SOLUTION', href: '#solution' },
+  { label: 'EVIDENCE', href: '#evidence' },
   { label: 'PRODUCT', href: '#product' },
-  { label: 'MARKET', href: '#market' },
-  { label: 'VISION', href: '#vision' },
+  { label: 'ECONOMICS', href: '#market' },
+  { label: 'ARCHITECTS', href: '#architects' },
 ];
 
 export const Navbar: React.FC = () => {
@@ -18,8 +17,8 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-3">
           <div className="w-6 h-6 bg-emerald-500 rounded-sm shadow-[0_0_10px_#10b981]"></div>
           <div className="flex flex-col">
-            <span className="font-bold text-sm tracking-tight leading-none">NeuroVine</span>
-            <span className="text-[8px] text-slate-500 tracking-[0.2em] font-mono mt-0.5">INVESTOR RELATIONS</span>
+            <span className="font-bold text-sm tracking-tight leading-none uppercase">NeuroVine</span>
+            <span className="text-[8px] text-slate-500 tracking-[0.2em] font-mono mt-0.5 uppercase">Capability Infrastructure AD 2080</span>
           </div>
         </div>
         
@@ -31,8 +30,8 @@ export const Navbar: React.FC = () => {
           ))}
         </div>
 
-        <button className="px-5 py-2.5 border border-emerald-500/30 text-emerald-400 text-[10px] font-bold tracking-widest rounded-full hover:bg-emerald-500 hover:text-slate-900 transition-all">
-          ACCESS DATA ROOM
+        <button className="px-5 py-2.5 border border-emerald-500/30 text-emerald-400 text-[10px] font-bold tracking-widest rounded-full hover:bg-emerald-500 hover:text-slate-900 transition-all uppercase">
+          Access IR Data Room
         </button>
       </div>
     </nav>
@@ -50,42 +49,42 @@ export const Footer: React.FC = () => {
               <span className="font-bold text-lg">NeuroVine</span>
             </div>
             <p className="text-[9px] text-slate-600 font-mono tracking-widest leading-relaxed uppercase">
-              Redefining the human interface.
+              Redefining education as capability access rights. Established 2080.
             </p>
           </div>
           
           <div>
             <h4 className="text-[9px] font-bold text-slate-500 tracking-[0.3em] uppercase mb-8">IR Navigation</h4>
             <ul className="space-y-4 text-[11px] text-slate-500">
-              <li><a href="#" className="hover:text-emerald-400 transition-colors">Deck Summary</a></li>
-              <li><a href="#" className="hover:text-emerald-400 transition-colors">Financials</a></li>
-              <li><a href="#" className="hover:text-emerald-400 transition-colors">Legal / Ethics</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Strategic Thesis</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Unit Economics</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Ethics Board</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-[9px] font-bold text-slate-500 tracking-[0.3em] uppercase mb-8">Documentation</h4>
+            <h4 className="text-[9px] font-bold text-slate-500 tracking-[0.3em] uppercase mb-8">Science & Legal</h4>
             <ul className="space-y-4 text-[11px] text-slate-500">
-              <li><a href="#" className="hover:text-emerald-400 transition-colors">Patent Library</a></li>
-              <li><a href="#" className="hover:text-emerald-400 transition-colors">Safety Protocols</a></li>
-              <li><a href="#" className="hover:text-emerald-400 transition-colors">Regulatory Roadmap</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Peer Reviewed Data</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Compliance 2080</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Neural Safety Act</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-[9px] font-bold text-slate-500 tracking-[0.3em] uppercase mb-8">Connect</h4>
-            <ul className="space-y-4 text-[11px] text-slate-500">
-              <li>ir@neurovine.sys</li>
-              <li>San Francisco, CA</li>
+            <h4 className="text-[9px] font-bold text-slate-500 tracking-[0.3em] uppercase mb-8">Global Hubs</h4>
+            <ul className="space-y-4 text-[11px] text-slate-500 font-mono">
+              <li>invest@neurovine.sys</li>
+              <li>Neo-Silicon Valley, NA</li>
             </ul>
           </div>
         </div>
         
         <div className="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/5 text-[9px] text-slate-700 font-mono tracking-widest uppercase">
-          <p>© 2024 NEUROVINE BCI SYSTEMS INC. ALL RIGHTS RESERVED.</p>
+          <p>© 2080 NEUROVINE BCI SYSTEMS INC. HIGHLY CONFIDENTIAL.</p>
           <div className="flex gap-8 mt-6 md:mt-0">
-            <a href="#" className="hover:text-slate-500 transition-colors">Confidentiality Agreement</a>
-            <a href="#" className="hover:text-slate-500 transition-colors">Privacy</a>
+            <a href="#" className="hover:text-slate-500 transition-colors">Sovereignty Protocol</a>
+            <a href="#" className="hover:text-slate-500 transition-colors">Privacy Shield</a>
           </div>
         </div>
       </div>
