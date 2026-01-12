@@ -1,0 +1,94 @@
+
+import React from 'react';
+import { NavLink } from '../types';
+
+const navLinks: NavLink[] = [
+  { label: 'SUMMARY', href: '#summary' },
+  { label: 'THE GAP', href: '#gap' },
+  { label: 'SOLUTION', href: '#solution' },
+  { label: 'PRODUCT', href: '#product' },
+  { label: 'MARKET', href: '#market' },
+  { label: 'VISION', href: '#vision' },
+];
+
+export const Navbar: React.FC = () => {
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#01040a]/80 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="w-6 h-6 bg-emerald-500 rounded-sm shadow-[0_0_10px_#10b981]"></div>
+          <div className="flex flex-col">
+            <span className="font-bold text-sm tracking-tight leading-none">NeuroVine</span>
+            <span className="text-[8px] text-slate-500 tracking-[0.2em] font-mono mt-0.5">INVESTOR RELATIONS</span>
+          </div>
+        </div>
+        
+        <div className="hidden md:flex items-center gap-10">
+          {navLinks.map((link) => (
+            <a key={link.label} href={link.href} className="text-[10px] font-bold text-slate-500 hover:text-emerald-400 transition-all tracking-[0.2em]">
+              {link.label}
+            </a>
+          ))}
+        </div>
+
+        <button className="px-5 py-2.5 border border-emerald-500/30 text-emerald-400 text-[10px] font-bold tracking-widest rounded-full hover:bg-emerald-500 hover:text-slate-900 transition-all">
+          ACCESS DATA ROOM
+        </button>
+      </div>
+    </nav>
+  );
+};
+
+export const Footer: React.FC = () => {
+  return (
+    <footer className="bg-[#01040a] border-t border-white/5 py-24">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <div className="w-5 h-5 bg-emerald-500 rounded-sm"></div>
+              <span className="font-bold text-lg">NeuroVine</span>
+            </div>
+            <p className="text-[9px] text-slate-600 font-mono tracking-widest leading-relaxed uppercase">
+              Redefining the human interface.
+            </p>
+          </div>
+          
+          <div>
+            <h4 className="text-[9px] font-bold text-slate-500 tracking-[0.3em] uppercase mb-8">IR Navigation</h4>
+            <ul className="space-y-4 text-[11px] text-slate-500">
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Deck Summary</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Financials</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Legal / Ethics</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-[9px] font-bold text-slate-500 tracking-[0.3em] uppercase mb-8">Documentation</h4>
+            <ul className="space-y-4 text-[11px] text-slate-500">
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Patent Library</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Safety Protocols</a></li>
+              <li><a href="#" className="hover:text-emerald-400 transition-colors">Regulatory Roadmap</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-[9px] font-bold text-slate-500 tracking-[0.3em] uppercase mb-8">Connect</h4>
+            <ul className="space-y-4 text-[11px] text-slate-500">
+              <li>ir@neurovine.sys</li>
+              <li>San Francisco, CA</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-white/5 text-[9px] text-slate-700 font-mono tracking-widest uppercase">
+          <p>© 2024 NEUROVINE BCI SYSTEMS INC. ALL RIGHTS RESERVED.</p>
+          <div className="flex gap-8 mt-6 md:mt-0">
+            <a href="#" className="hover:text-slate-500 transition-colors">Confidentiality Agreement</a>
+            <a href="#" className="hover:text-slate-500 transition-colors">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
